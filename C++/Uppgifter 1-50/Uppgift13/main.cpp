@@ -17,13 +17,10 @@ int main() {
 	cout << "Please select the number of jumps inbetween the numbers ";
 	cin >> jump;
 	
-	
-	cout << num1 << endl;
-	
 	while(num1 > stop)
 	{
-		num1 = num1 - jump;
 		cout << num1 << endl;
+		num1 = num1 - jump;
 	}
 	
 	return 0;

@@ -14,13 +14,13 @@ int main() {
 	minutes = mm1 + mm2;
 	seconds = ss1 + ss2;
 	
-	if(seconds >= 60)
+	while(seconds >= 60)
 	{
 		minutes = minutes + 1;
 		seconds = seconds - 60;
 	}
 	
-	if(minutes >= 60)
+	while(minutes >= 60)
 	{
 		hours = hours + 1;
 		minutes = minutes - 60;
