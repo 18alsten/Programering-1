@@ -9,7 +9,7 @@ int main() {
 	cin >> x;
 	
 	// Checks so that it only makes 6 lines
-	for(int s = 1; s < 6; s++)
+	for(int s = 1; s <= 6; s++)
 	{
 	
 	// Resets N
@@ -43,6 +43,5 @@ int main() {
 	}
 	
 	}
-	
 	return 0;
 }

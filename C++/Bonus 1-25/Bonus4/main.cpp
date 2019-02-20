@@ -3,26 +3,26 @@
 using namespace std;
 
 int main() {
-	float tal1;
+	float tal1, tal2, check_down, check_up;
 	
 	cout << "Please input a number " << endl;
 	cin >> tal1;
+	cout << "Please input a second number: " << endl;
+	cin >> tal2;
 	
-	if(tal1 >= 10 and tal1 < 20)
-	{
-		cout << "Close but no cigar!";
-		return 0;
-	}
-	if(tal1 <=30 and tal1 > 20)
-	{
-		cout << "Close but no cigar!";
-		return 0;
-	}
-	if(tal1 == 20)
+	check_down = tal2 - 10;
+	check_up = tal2 + 10;
+	
+	if(tal1 == tal2)
 	{
 		cout << "Grattis!";
-		return 0;
+	} else if(tal1 < tal2 and tal1 >= check_down) {
+		cout << "Close but no cigar!";
+	} else if(tal1 > tal2 and tal1 <= check_up) {
+		cout << "Close but no cigar!";
+	} else {
+		cout << "Not even close!";
 	}
-	cout << "Not even close";
+	
 	return 0;
 }

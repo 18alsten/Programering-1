@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int tal1, tal2;
+	float tal1, tal2;
 	
 	cout << "Första talet ";
 	cin >> tal1;
