@@ -4,11 +4,6 @@ using namespace std;
 
 int main() {
 	int numbers[5], correct[5], is_same;
-	correct[0] = 1;
-	correct[1] = 2;
-	correct[2] = 3;
-	correct[3] = 4;
-	correct[4] = 5;
 	
 	for(int insert_numbers = 0; insert_numbers < 5; insert_numbers++)
 	{
@@ -18,17 +13,22 @@ int main() {
 	
 	for(int i = 0; i < 5; i++)
 	{
-		if(numbers[i] == correct[i])
+		for(int test = 0; test < 5; test++)
 		{
+			if(numbers[i] == numbers[test] and i != test)
+			{
 			is_same = true;
-		} else {
+			
+			} else {
+				
 			is_same = false;
+			}
+			
+			if(is_same == true)
+			{
+			cout << numbers[i] << " is the same" << endl;
+			}
 		}
-	}
-	
-	if(is_same == true)
-	{
-		cout << "You win!";
 	}
 	
 	return 0;
