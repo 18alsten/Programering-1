@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 		cout << "Andragradslosningen har inga reella losingar utan endast de komplexa rotterna: ";
 		imag = sqrt((pow(p/2, 2) -q) * -1);
 		cout << -(p/2);
-		cout << " + " << imag << "i";
+		cout << " " << (char) 241 << " " << imag << "i";
 		cout << endl;
 	}
 	

@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	int numbers[5], correct[5], is_same;
+	int numbers[5], is_same;
 	
 	for(int insert_numbers = 0; insert_numbers < 5; insert_numbers++)
 	{
