@@ -24,9 +24,11 @@ int main(int argc, char** argv) {
 	// How many attempts the user and AI has left
 	for(int i = 0; i < 5 and user != random and ai != random; i++) {
 		
+		// User guesses a number
 		cout << "Guess a number inbetween 1-100: ";
 		cin >> user;
 		
+		// Checks if the usser guessed more or less than the number
 		if(user == random) {
 			cout << "Correct! You win!";
 		} else if(user < random) {
