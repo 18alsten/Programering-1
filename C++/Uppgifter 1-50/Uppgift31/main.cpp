@@ -8,13 +8,14 @@ int main(int argc, char** argv) {
 	cout << "Enter a word ";
 	cin >> word;
 	
-	int stop = 0; 
-	while (word[stop] != '\0')
+
+/*	while (word[stop] != '\0')
 	{
       stop++;
 	}
-	
-	for(int i = 0; i < stop; i++)
+*/	
+
+	for(int i = 0; i < '/0'; i++) /* shorter than the old whith stop variable becuase all the code above is no longer needed */
 	{
 		if(word[i] == 'Z')
 		{
